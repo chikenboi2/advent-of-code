@@ -105,7 +105,7 @@ public class Day8 {
             }
         }
 
-        // removed the counter and instead loops ends when trying to add circuit of same size as total coords
+        // removed the counter and instead loop ends when trying to add circuit of same size as total coords
         HashSet<HashSet<Integer>> circs = new HashSet<>();
         for (Double dist : dists.keySet()){
             int index1 = dists.get(dist)[0];
@@ -121,7 +121,7 @@ public class Day8 {
             temp.addAll(circ2);
 
             if(temp.size() == coords.size()){
-                System.out.println((double)coords.get(index1)[0] * coords.get(index2)[0]); 
+                System.out.println((double) coords.get(index1)[0] * coords.get(index2)[0]); // i love when integer overflow so (double)
                 break;
             }
             circs.add(temp);
