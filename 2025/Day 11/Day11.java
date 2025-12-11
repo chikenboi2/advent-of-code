@@ -6,7 +6,7 @@ public class Day11 {
         Scanner in = new Scanner(new FileReader("./Day11.txt"));
         part1(in);
         
-        // make sure to run both parts together because graph is reused from part1 in part2
+        // make sure to run both parts together because connections from input is reused from part1 in part2
         part2(in);
 
         in.close();
